@@ -1,6 +1,7 @@
 xhost +local:root
 
 docker run -it \
+    --gpus all \
     --hostname="rover" \
     --env="DISPLAY" \
     --privileged \
