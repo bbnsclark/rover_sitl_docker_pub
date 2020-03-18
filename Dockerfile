@@ -39,8 +39,7 @@ RUN sudo -H python -m pip install websocket-client utm
 # now, we create our own overlay worskpace
 RUN mkdir -p ~/rover/src
 
-RUN eval $(ssh-agent) && \
-    cd ~/rover/src && \
+RUN cd ~/rover/src && \
     git clone https://github.com/radarku/rover_gazebo.git && \
     git clone https://github.com/radarku/rover_description.git && \
     git clone https://github.com/radarku/rover_launcher.git && \
