@@ -42,6 +42,7 @@ RUN mkdir -p ~/rover/src
 RUN cd ~/rover/src && \
     git clone https://github.com/radarku/rover_gazebo.git && \
     git clone https://github.com/radarku/rover_description.git && \
+    git clone https://github.com/radarku/rover_launcher.git && \
     git clone https://github.com/radarku/rover_launcher_sitl.git && \
     git clone https://github.com/radarku/global_position_controller.git && \
     git clone https://github.com/radarku/gps_driver_sitl.git && \
